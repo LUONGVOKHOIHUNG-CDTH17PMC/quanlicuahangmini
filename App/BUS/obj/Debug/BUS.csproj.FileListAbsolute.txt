@@ -1,0 +1,16 @@
+D:\Quanlycuahangtienloi\BUS\bin\Debug\BUS.exe.config
+D:\Quanlycuahangtienloi\BUS\bin\Debug\BUS.exe
+D:\Quanlycuahangtienloi\BUS\bin\Debug\BUS.pdb
+D:\Quanlycuahangtienloi\BUS\bin\Debug\DAO.exe
+D:\Quanlycuahangtienloi\BUS\bin\Debug\DTO.exe
+D:\Quanlycuahangtienloi\BUS\bin\Debug\DAO.pdb
+D:\Quanlycuahangtienloi\BUS\bin\Debug\DAO.exe.config
+D:\Quanlycuahangtienloi\BUS\bin\Debug\DTO.pdb
+D:\Quanlycuahangtienloi\BUS\bin\Debug\DTO.exe.config
+D:\Quanlycuahangtienloi\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+D:\Quanlycuahangtienloi\BUS\obj\Debug\BUS.Properties.Resources.resources
+D:\Quanlycuahangtienloi\BUS\obj\Debug\BUS.csproj.GenerateResource.cache
+D:\Quanlycuahangtienloi\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+D:\Quanlycuahangtienloi\BUS\obj\Debug\BUS.csproj.CopyComplete
+D:\Quanlycuahangtienloi\BUS\obj\Debug\BUS.exe
+D:\Quanlycuahangtienloi\BUS\obj\Debug\BUS.pdb

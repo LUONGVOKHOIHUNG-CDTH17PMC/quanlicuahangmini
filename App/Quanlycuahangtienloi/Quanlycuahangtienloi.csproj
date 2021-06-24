@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2A5D2453-0EAF-49E9-B3BE-A4BD93AE1107}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Quanlycuahangtienloi</RootNamespace>
+    <AssemblyName>Quanlycuahangtienloi</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualStudio.OLE.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <HintPath>..\packages\Microsoft.VisualStudio.OLE.Interop.16.10.31320.204\lib\net45\Microsoft.VisualStudio.OLE.Interop.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <HintPath>..\packages\Microsoft.VisualStudio.Shell.Interop.16.10.31320.204\lib\net45\Microsoft.VisualStudio.Shell.Interop.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop.10.0, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.VisualStudio.Shell.Interop.10.0.16.10.31320.204\lib\net45\Microsoft.VisualStudio.Shell.Interop.10.0.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop.11.0, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.VisualStudio.Shell.Interop.11.0.16.10.31320.204\lib\net45\Microsoft.VisualStudio.Shell.Interop.11.0.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop.8.0, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <HintPath>..\packages\Microsoft.VisualStudio.Shell.Interop.8.0.16.10.31320.204\lib\net45\Microsoft.VisualStudio.Shell.Interop.8.0.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.TextManager.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <HintPath>..\packages\Microsoft.VisualStudio.TextManager.Interop.16.10.31320.204\lib\net45\Microsoft.VisualStudio.TextManager.Interop.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.TextManager.Interop.8.0, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <HintPath>..\packages\Microsoft.VisualStudio.TextManager.Interop.8.0.16.10.31320.204\lib\net45\Microsoft.VisualStudio.TextManager.Interop.8.0.dll</HintPath>
+    </Reference>
+    <Reference Include="Siticone.Desktop.UI">
+      <HintPath>C:\Users\Admin\Downloads\Siticone.Desktop.UI.Version.2.0.6\Siticone.Desktop.UI.Version.2.0.6\Siticone.Desktop.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Doimaukhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doimaukhau.Designer.cs">
+      <DependentUpon>Doimaukhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fmgiaodien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fmgiaodien.Designer.cs">
+      <DependentUpon>Fmgiaodien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmMain.Designer.cs">
+      <DependentUpon>FmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="profile.Designer.cs">
+      <DependentUpon>profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="qlcuahangDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>qlcuahangDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyNhaCungCap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyNhaCungCap.Designer.cs">
+      <DependentUpon>QuanLyNhaCungCap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quenmk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quenmk.Designer.cs">
+      <DependentUpon>Quenmk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Order.Designer.cs">
+      <DependentUpon>Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resetpassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resetpassword.Designer.cs">
+      <DependentUpon>Resetpassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sendcode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sendcode.Designer.cs">
+      <DependentUpon>Sendcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SuaNCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuaNCC.Designer.cs">
+      <DependentUpon>SuaNCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Thanhtoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thanhtoan.Designer.cs">
+      <DependentUpon>Thanhtoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThemNCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemNCC.Designer.cs">
+      <DependentUpon>ThemNCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Đăng nhập.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Đăng nhập.Designer.cs">
+      <DependentUpon>Đăng nhập.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Doimaukhau.resx">
+      <DependentUpon>Doimaukhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fmgiaodien.resx">
+      <DependentUpon>Fmgiaodien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmMain.resx">
+      <DependentUpon>FmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="profile.resx">
+      <DependentUpon>profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyNhaCungCap.resx">
+      <DependentUpon>QuanLyNhaCungCap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quenmk.resx">
+      <DependentUpon>Quenmk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order.resx">
+      <DependentUpon>Order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resetpassword.resx">
+      <DependentUpon>Resetpassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sendcode.resx">
+      <DependentUpon>Sendcode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuaNCC.resx">
+      <DependentUpon>SuaNCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Thanhtoan.resx">
+      <DependentUpon>Thanhtoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemNCC.resx">
+      <DependentUpon>ThemNCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Đăng nhập.resx">
+      <DependentUpon>Đăng nhập.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="qlcuahangDataSet.xsc">
+      <DependentUpon>qlcuahangDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="qlcuahangDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>qlcuahangDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="qlcuahangDataSet.xss">
+      <DependentUpon>qlcuahangDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\3071357.jpg" />
+    <Content Include="Resources\back-arrow.png" />
+    <Content Include="Resources\back-arrow1.png" />
+    <Content Include="Resources\calculator.png" />
+    <Content Include="Resources\calculator1.png" />
+    <Content Include="Resources\customer.png" />
+    <Content Include="Resources\dairy-products.png" />
+    <Content Include="Resources\dairy-products1.png" />
+    <Content Include="Resources\dairy-products2.png" />
+    <Content Include="Resources\exit.png" />
+    <Content Include="Resources\giai-de-thi-ielts-writing-task-1-08-05-2021-dang-bai-bar-charts-co-nhieu-doi-tuong-1-1024x801.png" />
+    <Content Include="Resources\home-page.png" />
+    <Content Include="Resources\house.png" />
+    <Content Include="Resources\invoice.png" />
+    <Content Include="Resources\justified.png" />
+    <Content Include="Resources\list.png" />
+    <Content Include="Resources\location %281%29.png" />
+    <Content Include="Resources\location.png" />
+    <Content Include="Resources\lock.png" />
+    <Content Include="Resources\lock1.png" />
+    <Content Include="Resources\login.png" />
+    <Content Include="Resources\login1.png" />
+    <Content Include="Resources\Logo.PNG" />
+    <Content Include="Resources\Logo1.PNG" />
+    <Content Include="Resources\Logo2.PNG" />
+    <Content Include="Resources\minimize.png" />
+    <Content Include="Resources\notes.png" />
+    <Content Include="Resources\padlock.png" />
+    <Content Include="Resources\pie-chart-1.png" />
+    <Content Include="Resources\product %281%29.png" />
+    <Content Include="Resources\product %282%29.png" />
+    <Content Include="Resources\product.png" />
+    <Content Include="Resources\product1.png" />
+    <Content Include="Resources\Recover-a-Forgotten-Password-using-old-password.png" />
+    <Content Include="Resources\search.png" />
+    <Content Include="Resources\security.png" />
+    <Content Include="Resources\shopping-cart.png" />
+    <Content Include="Resources\shopping.png" />
+    <Content Include="Resources\square.png" />
+    <Content Include="Resources\squares.png" />
+    <Content Include="Resources\statistics.png" />
+    <Content Include="Resources\teamwork %281%29.png" />
+    <Content Include="Resources\teamwork %282%29.png" />
+    <Content Include="Resources\Tim-hieu-ve-Chart-js.png" />
+    <Content Include="Resources\user %281%29.png" />
+    <Content Include="Resources\user %281%291.png" />
+    <Content Include="Resources\user %281%292.png" />
+    <Content Include="Resources\user %281%293.png" />
+    <Content Include="Resources\user %281%294.png" />
+    <Content Include="Resources\user %282%29.png" />
+    <Content Include="Resources\user %283%29.png" />
+    <Content Include="Resources\user.png" />
+    <Content Include="Resources\user1.png" />
+    <Content Include="Resources\user2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BUS\BUS.csproj">
+      <Project>{48c307e5-2626-4125-86b3-7aeceac5d506}</Project>
+      <Name>BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{3bc1c7ac-6043-4adb-8b41-7889fb68d7fc}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Microsoft.VisualStudio.SDK.EmbedInteropTypes.15.0.34\build\Microsoft.VisualStudio.SDK.EmbedInteropTypes.targets" Condition="Exists('..\packages\Microsoft.VisualStudio.SDK.EmbedInteropTypes.15.0.34\build\Microsoft.VisualStudio.SDK.EmbedInteropTypes.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.VisualStudio.SDK.EmbedInteropTypes.15.0.34\build\Microsoft.VisualStudio.SDK.EmbedInteropTypes.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.VisualStudio.SDK.EmbedInteropTypes.15.0.34\build\Microsoft.VisualStudio.SDK.EmbedInteropTypes.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
