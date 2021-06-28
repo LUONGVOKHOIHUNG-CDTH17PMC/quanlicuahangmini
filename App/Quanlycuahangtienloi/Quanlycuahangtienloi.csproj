@@ -94,6 +94,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="common.cs" />
     <Compile Include="Doimaukhau.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +112,24 @@
     </Compile>
     <Compile Include="FmMain.Designer.cs">
       <DependentUpon>FmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyChiTietPhieuNhapKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyChiTietPhieuNhapKho.Designer.cs">
+      <DependentUpon>QuanLyChiTietPhieuNhapKho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyHoaDon.Designer.cs">
+      <DependentUpon>QuanLyHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyKhachHang.Designer.cs">
+      <DependentUpon>QuanLyKhachHang.cs</DependentUpon>
     </Compile>
     <Compile Include="profile.cs">
       <SubType>Form</SubType>
@@ -130,11 +149,35 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>qlcuahangDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="QuanLyKhuyenMai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyKhuyenMai.Designer.cs">
+      <DependentUpon>QuanLyKhuyenMai.cs</DependentUpon>
+    </Compile>
     <Compile Include="QuanLyNhaCungCap.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="QuanLyNhaCungCap.Designer.cs">
       <DependentUpon>QuanLyNhaCungCap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyNhanVien.Designer.cs">
+      <DependentUpon>QuanLyNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyPhieuNhapKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyPhieuNhapKho.Designer.cs">
+      <DependentUpon>QuanLyPhieuNhapKho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLySanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLySanPham.Designer.cs">
+      <DependentUpon>QuanLySanPham.cs</DependentUpon>
     </Compile>
     <Compile Include="Quenmk.cs">
       <SubType>Form</SubType>
@@ -160,11 +203,41 @@
     <Compile Include="Sendcode.Designer.cs">
       <DependentUpon>Sendcode.cs</DependentUpon>
     </Compile>
+    <Compile Include="SuaCTPNK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuaCTPNK.Designer.cs">
+      <DependentUpon>SuaCTPNK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SuaHD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuaHD.Designer.cs">
+      <DependentUpon>SuaHD.cs</DependentUpon>
+    </Compile>
     <Compile Include="SuaNCC.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SuaNCC.Designer.cs">
       <DependentUpon>SuaNCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SuaNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuaNV.Designer.cs">
+      <DependentUpon>SuaNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SuaPNK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuaPNK.Designer.cs">
+      <DependentUpon>SuaPNK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="suaSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="suaSP.Designer.cs">
+      <DependentUpon>suaSP.cs</DependentUpon>
     </Compile>
     <Compile Include="Thanhtoan.cs">
       <SubType>Form</SubType>
@@ -172,11 +245,53 @@
     <Compile Include="Thanhtoan.Designer.cs">
       <DependentUpon>Thanhtoan.cs</DependentUpon>
     </Compile>
+    <Compile Include="ThemCTPNK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemCTPNK.Designer.cs">
+      <DependentUpon>ThemCTPNK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThemHD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemHD.Designer.cs">
+      <DependentUpon>ThemHD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThemKH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemKH.Designer.cs">
+      <DependentUpon>ThemKH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThemKM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemKM.Designer.cs">
+      <DependentUpon>ThemKM.cs</DependentUpon>
+    </Compile>
     <Compile Include="ThemNCC.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ThemNCC.Designer.cs">
       <DependentUpon>ThemNCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThemNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemNV.Designer.cs">
+      <DependentUpon>ThemNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThemPNK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemPNK.Designer.cs">
+      <DependentUpon>ThemPNK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThemSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemSP.Designer.cs">
+      <DependentUpon>ThemSP.cs</DependentUpon>
     </Compile>
     <Compile Include="Đăng nhập.cs">
       <SubType>Form</SubType>
@@ -201,8 +316,29 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyChiTietPhieuNhapKho.resx">
+      <DependentUpon>QuanLyChiTietPhieuNhapKho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyHoaDon.resx">
+      <DependentUpon>QuanLyHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyKhachHang.resx">
+      <DependentUpon>QuanLyKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyKhuyenMai.resx">
+      <DependentUpon>QuanLyKhuyenMai.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="QuanLyNhaCungCap.resx">
       <DependentUpon>QuanLyNhaCungCap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyNhanVien.resx">
+      <DependentUpon>QuanLyNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyPhieuNhapKho.resx">
+      <DependentUpon>QuanLyPhieuNhapKho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLySanPham.resx">
+      <DependentUpon>QuanLySanPham.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Quenmk.resx">
       <DependentUpon>Quenmk.cs</DependentUpon>
@@ -216,14 +352,50 @@
     <EmbeddedResource Include="Sendcode.resx">
       <DependentUpon>Sendcode.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SuaCTPNK.resx">
+      <DependentUpon>SuaCTPNK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuaHD.resx">
+      <DependentUpon>SuaHD.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SuaNCC.resx">
       <DependentUpon>SuaNCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuaNV.resx">
+      <DependentUpon>SuaNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuaPNK.resx">
+      <DependentUpon>SuaPNK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="suaSP.resx">
+      <DependentUpon>suaSP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Thanhtoan.resx">
       <DependentUpon>Thanhtoan.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ThemCTPNK.resx">
+      <DependentUpon>ThemCTPNK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemHD.resx">
+      <DependentUpon>ThemHD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemKH.resx">
+      <DependentUpon>ThemKH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemKM.resx">
+      <DependentUpon>ThemKM.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ThemNCC.resx">
       <DependentUpon>ThemNCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemNV.resx">
+      <DependentUpon>ThemNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemPNK.resx">
+      <DependentUpon>ThemPNK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemSP.resx">
+      <DependentUpon>ThemSP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Đăng nhập.resx">
       <DependentUpon>Đăng nhập.cs</DependentUpon>

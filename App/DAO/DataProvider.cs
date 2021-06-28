@@ -120,5 +120,30 @@ namespace DAO
                 return null;
             }
         }
+
+        public static DataSet getListCombobox(string table, string query, SqlParameter[] paras)
+        {
+            try
+            {
+                using (var conn = new SqlConnection(sqlConnection))
+                {
+                    //string query = "select mancc from sanpham where trangthai=1;";
+
+                    SqlDataAdapter da = new SqlDataAdapter(query, conn);
+                    conn.Open();
+                    DataSet ds = new DataSet();
+                    da.Fill(ds, table);
+                    //metroComboBox1.DisplayMember = "mancc";
+                    //metroComboBox1.ValueMember = "mancc";
+                    //metroComboBox1.DataSource = ds.Tables["sanpham"];
+                    conn.Close();
+                    return ds;
+                }
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
     }
 }

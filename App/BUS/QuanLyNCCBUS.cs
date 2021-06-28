@@ -20,6 +20,11 @@ namespace BUS
             return QuanLyNCCDAO.ThemNhaCungCap(txtThemtenNCC, txtThemmaNCC, txtThemtrangthaiNCC, txtThemdiachiNCC, txtThememailNCC, txtThemsdtNCC);
         }
 
+        public static DataTable GetPNK()
+        {
+            return QuanLyPNKDAO.GetKH();
+        }
+
         public static DataTable TimKiemNhaCungCap(string textSearch, bool sudung, bool khongSudung)
         {
             return QuanLyNCCDAO.TimKiemNhaCungCap(textSearch, sudung, khongSudung);
@@ -29,5 +34,7 @@ namespace BUS
         {
             return QuanLyNCCDAO.SuaNhaCungCap(txtSuatenNCC, txtSuamaNCC, txtSuadiachiNCC, txtSuaemailNCC,  txtSuasdtNCC,  trangthai);
         }
+
+      
     }
 }

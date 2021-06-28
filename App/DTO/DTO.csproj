@@ -48,7 +48,10 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuanLyKhachHangDTO.cs" />
     <Compile Include="QuanLyNCCDTO.cs" />
+    <Compile Include="QuanLyNhanVienDTO.cs" />
+    <Compile Include="QuanLySanPhamDTO.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

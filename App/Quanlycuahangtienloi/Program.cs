@@ -16,7 +16,7 @@ namespace Quanlycuahangtienloi
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new QuanLyNhaCungCap());
+            Application.Run(new QuanLyKhuyenMai());
         }
     }
 }

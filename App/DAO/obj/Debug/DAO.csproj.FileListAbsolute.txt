@@ -11,3 +11,16 @@ D:\Quanlycuahangtienloi\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
 D:\Quanlycuahangtienloi\DAO\obj\Debug\DAO.csproj.CopyComplete
 D:\Quanlycuahangtienloi\DAO\obj\Debug\DAO.exe
 D:\Quanlycuahangtienloi\DAO\obj\Debug\DAO.pdb
+D:\QuanLyCuaHangTienLoi\QuanLyCuaHangTienLoi_Huynh_Tuan_CDTH17C\App\DAO\bin\Debug\DAO.exe.config
+D:\QuanLyCuaHangTienLoi\QuanLyCuaHangTienLoi_Huynh_Tuan_CDTH17C\App\DAO\bin\Debug\DAO.exe
+D:\QuanLyCuaHangTienLoi\QuanLyCuaHangTienLoi_Huynh_Tuan_CDTH17C\App\DAO\bin\Debug\DAO.pdb
+D:\QuanLyCuaHangTienLoi\QuanLyCuaHangTienLoi_Huynh_Tuan_CDTH17C\App\DAO\bin\Debug\DTO.exe
+D:\QuanLyCuaHangTienLoi\QuanLyCuaHangTienLoi_Huynh_Tuan_CDTH17C\App\DAO\bin\Debug\DTO.pdb
+D:\QuanLyCuaHangTienLoi\QuanLyCuaHangTienLoi_Huynh_Tuan_CDTH17C\App\DAO\bin\Debug\DTO.exe.config
+D:\QuanLyCuaHangTienLoi\QuanLyCuaHangTienLoi_Huynh_Tuan_CDTH17C\App\DAO\obj\Debug\DAO.csproj.AssemblyReference.cache
+D:\QuanLyCuaHangTienLoi\QuanLyCuaHangTienLoi_Huynh_Tuan_CDTH17C\App\DAO\obj\Debug\DAO.Properties.Resources.resources
+D:\QuanLyCuaHangTienLoi\QuanLyCuaHangTienLoi_Huynh_Tuan_CDTH17C\App\DAO\obj\Debug\DAO.csproj.GenerateResource.cache
+D:\QuanLyCuaHangTienLoi\QuanLyCuaHangTienLoi_Huynh_Tuan_CDTH17C\App\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+D:\QuanLyCuaHangTienLoi\QuanLyCuaHangTienLoi_Huynh_Tuan_CDTH17C\App\DAO\obj\Debug\DAO.csproj.CopyComplete
+D:\QuanLyCuaHangTienLoi\QuanLyCuaHangTienLoi_Huynh_Tuan_CDTH17C\App\DAO\obj\Debug\DAO.exe
+D:\QuanLyCuaHangTienLoi\QuanLyCuaHangTienLoi_Huynh_Tuan_CDTH17C\App\DAO\obj\Debug\DAO.pdb

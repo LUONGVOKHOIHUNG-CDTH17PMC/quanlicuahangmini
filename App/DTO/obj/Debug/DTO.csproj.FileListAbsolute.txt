@@ -7,3 +7,12 @@ D:\Quanlycuahangtienloi\DTO\obj\Debug\DTO.csproj.GenerateResource.cache
 D:\Quanlycuahangtienloi\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 D:\Quanlycuahangtienloi\DTO\obj\Debug\DTO.exe
 D:\Quanlycuahangtienloi\DTO\obj\Debug\DTO.pdb
+D:\QuanLyCuaHangTienLoi\QuanLyCuaHangTienLoi_Huynh_Tuan_CDTH17C\App\DTO\bin\Debug\DTO.exe.config
+D:\QuanLyCuaHangTienLoi\QuanLyCuaHangTienLoi_Huynh_Tuan_CDTH17C\App\DTO\bin\Debug\DTO.exe
+D:\QuanLyCuaHangTienLoi\QuanLyCuaHangTienLoi_Huynh_Tuan_CDTH17C\App\DTO\bin\Debug\DTO.pdb
+D:\QuanLyCuaHangTienLoi\QuanLyCuaHangTienLoi_Huynh_Tuan_CDTH17C\App\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+D:\QuanLyCuaHangTienLoi\QuanLyCuaHangTienLoi_Huynh_Tuan_CDTH17C\App\DTO\obj\Debug\DTO.Properties.Resources.resources
+D:\QuanLyCuaHangTienLoi\QuanLyCuaHangTienLoi_Huynh_Tuan_CDTH17C\App\DTO\obj\Debug\DTO.csproj.GenerateResource.cache
+D:\QuanLyCuaHangTienLoi\QuanLyCuaHangTienLoi_Huynh_Tuan_CDTH17C\App\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\QuanLyCuaHangTienLoi\QuanLyCuaHangTienLoi_Huynh_Tuan_CDTH17C\App\DTO\obj\Debug\DTO.exe
+D:\QuanLyCuaHangTienLoi\QuanLyCuaHangTienLoi_Huynh_Tuan_CDTH17C\App\DTO\obj\Debug\DTO.pdb

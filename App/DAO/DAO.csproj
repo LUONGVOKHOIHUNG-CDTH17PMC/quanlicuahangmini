@@ -50,7 +50,13 @@
     <Compile Include="Datatable.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuaLySanPhamDAO.cs" />
+    <Compile Include="QuanLyCTPNKDAO.cs" />
+    <Compile Include="QuanLyKhachHangDAO.cs" />
+    <Compile Include="QuanLyKhuyenmaiDAO.cs" />
     <Compile Include="QuanLyNCCDAO.cs" />
+    <Compile Include="QuanLyNhanVienDAO.cs" />
+    <Compile Include="QuanLyPNKDAO.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

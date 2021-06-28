@@ -29,11 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.pn_main = new System.Windows.Forms.Panel();
+            this.panel16 = new System.Windows.Forms.Panel();
+            this.lb_ngythang = new System.Windows.Forms.Label();
+            this.lb_thoigian = new System.Windows.Forms.Label();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.metroProgressBarRam = new MetroFramework.Controls.MetroProgressBar();
             this.metroProgressBaCpu = new MetroFramework.Controls.MetroProgressBar();
@@ -47,8 +50,6 @@
             this.panel15 = new System.Windows.Forms.Panel();
             this.panel14 = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
-            this.lb_ngythang = new System.Windows.Forms.Label();
-            this.lb_thoigian = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lb_slnk = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -83,8 +84,8 @@
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.PRam = new System.Diagnostics.PerformanceCounter();
             this.PCpu = new System.Diagnostics.PerformanceCounter();
-            this.panel16 = new System.Windows.Forms.Panel();
             this.pn_main.SuspendLayout();
+            this.panel16.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -109,7 +110,6 @@
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PRam)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PCpu)).BeginInit();
-            this.panel16.SuspendLayout();
             this.SuspendLayout();
             // 
             // pn_main
@@ -137,29 +137,66 @@
             this.pn_main.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pn_main.Location = new System.Drawing.Point(0, 0);
             this.pn_main.Name = "pn_main";
-            this.pn_main.Size = new System.Drawing.Size(965, 803);
+            this.pn_main.Size = new System.Drawing.Size(965, 788);
             this.pn_main.TabIndex = 0;
             this.pn_main.Paint += new System.Windows.Forms.PaintEventHandler(this.pn_main_Paint);
+            // 
+            // panel16
+            // 
+            this.panel16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel16.CausesValidation = false;
+            this.panel16.Controls.Add(this.lb_ngythang);
+            this.panel16.Controls.Add(this.lb_thoigian);
+            this.panel16.Location = new System.Drawing.Point(658, 556);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(294, 189);
+            this.panel16.TabIndex = 20;
+            // 
+            // lb_ngythang
+            // 
+            this.lb_ngythang.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lb_ngythang.AutoSize = true;
+            this.lb_ngythang.BackColor = System.Drawing.SystemColors.Control;
+            this.lb_ngythang.Font = new System.Drawing.Font("Century", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_ngythang.Location = new System.Drawing.Point(3, 125);
+            this.lb_ngythang.Name = "lb_ngythang";
+            this.lb_ngythang.Size = new System.Drawing.Size(214, 28);
+            this.lb_ngythang.TabIndex = 13;
+            this.lb_ngythang.Text = "dddd-dd-mm-yyyy";
+            this.lb_ngythang.Click += new System.EventHandler(this.lb_ngythang_Click);
+            // 
+            // lb_thoigian
+            // 
+            this.lb_thoigian.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lb_thoigian.AutoSize = true;
+            this.lb_thoigian.BackColor = System.Drawing.SystemColors.Control;
+            this.lb_thoigian.Font = new System.Drawing.Font("Century", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_thoigian.Location = new System.Drawing.Point(71, 43);
+            this.lb_thoigian.Name = "lb_thoigian";
+            this.lb_thoigian.Size = new System.Drawing.Size(166, 44);
+            this.lb_thoigian.TabIndex = 14;
+            this.lb_thoigian.Text = "00:00:00";
+            this.lb_thoigian.Click += new System.EventHandler(this.lb_thoigian_Click);
             // 
             // chart1
             // 
             this.chart1.BackColor = System.Drawing.SystemColors.Control;
-            chartArea4.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.chart1.Legends.Add(legend4);
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(102, 591);
             this.chart1.Name = "chart1";
-            series7.ChartArea = "ChartArea1";
-            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series7.Legend = "Legend1";
-            series7.Name = "CPU";
-            series8.ChartArea = "ChartArea1";
-            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series8.Legend = "Legend1";
-            series8.Name = "RAM";
-            this.chart1.Series.Add(series7);
-            this.chart1.Series.Add(series8);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series1.Legend = "Legend1";
+            series1.Name = "CPU";
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series2.Legend = "Legend1";
+            series2.Name = "RAM";
+            this.chart1.Series.Add(series1);
+            this.chart1.Series.Add(series2);
             this.chart1.Size = new System.Drawing.Size(439, 200);
             this.chart1.TabIndex = 19;
             // 
@@ -263,7 +300,7 @@
             this.panel15.BackColor = System.Drawing.Color.DimGray;
             this.panel15.Location = new System.Drawing.Point(642, 536);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(3, 270);
+            this.panel15.Size = new System.Drawing.Size(3, 255);
             this.panel15.TabIndex = 16;
             this.panel15.Paint += new System.Windows.Forms.PaintEventHandler(this.panel15_Paint);
             // 
@@ -286,32 +323,6 @@
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(965, 3);
             this.panel13.TabIndex = 15;
-            // 
-            // lb_ngythang
-            // 
-            this.lb_ngythang.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.lb_ngythang.AutoSize = true;
-            this.lb_ngythang.BackColor = System.Drawing.SystemColors.Control;
-            this.lb_ngythang.Font = new System.Drawing.Font("Century", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_ngythang.Location = new System.Drawing.Point(3, 125);
-            this.lb_ngythang.Name = "lb_ngythang";
-            this.lb_ngythang.Size = new System.Drawing.Size(214, 28);
-            this.lb_ngythang.TabIndex = 13;
-            this.lb_ngythang.Text = "dddd-dd-mm-yyyy";
-            this.lb_ngythang.Click += new System.EventHandler(this.lb_ngythang_Click);
-            // 
-            // lb_thoigian
-            // 
-            this.lb_thoigian.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lb_thoigian.AutoSize = true;
-            this.lb_thoigian.BackColor = System.Drawing.SystemColors.Control;
-            this.lb_thoigian.Font = new System.Drawing.Font("Century", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_thoigian.Location = new System.Drawing.Point(71, 43);
-            this.lb_thoigian.Name = "lb_thoigian";
-            this.lb_thoigian.Size = new System.Drawing.Size(166, 44);
-            this.lb_thoigian.TabIndex = 14;
-            this.lb_thoigian.Text = "00:00:00";
-            this.lb_thoigian.Click += new System.EventHandler(this.lb_thoigian_Click);
             // 
             // panel3
             // 
@@ -671,22 +682,11 @@
             this.PCpu.CounterName = "% Processor Time";
             this.PCpu.InstanceName = "_Total";
             // 
-            // panel16
-            // 
-            this.panel16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel16.CausesValidation = false;
-            this.panel16.Controls.Add(this.lb_ngythang);
-            this.panel16.Controls.Add(this.lb_thoigian);
-            this.panel16.Location = new System.Drawing.Point(658, 571);
-            this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(294, 189);
-            this.panel16.TabIndex = 20;
-            // 
             // Fmgiaodien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(965, 803);
+            this.ClientSize = new System.Drawing.Size(965, 788);
             this.Controls.Add(this.pn_main);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Fmgiaodien";
@@ -694,6 +694,8 @@
             this.Load += new System.EventHandler(this.Fmgiaodien_Load);
             this.pn_main.ResumeLayout(false);
             this.pn_main.PerformLayout();
+            this.panel16.ResumeLayout(false);
+            this.panel16.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -730,8 +732,6 @@
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PRam)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PCpu)).EndInit();
-            this.panel16.ResumeLayout(false);
-            this.panel16.PerformLayout();
             this.ResumeLayout(false);
 
         }

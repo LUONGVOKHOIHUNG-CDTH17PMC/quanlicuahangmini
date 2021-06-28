@@ -16,6 +16,7 @@ namespace DAO
             return DataProvider.getDataTable(query, null);
         }
 
+        
         public static bool ThemNhaCungCap(string txtThemtenNCC, string txtThemmaNCC, string txtThemtrangthaiNCC, string txtThemdiachiNCC, string txtThememailNCC, string txtThemsdtNCC)
         {
             string query = String.Format("INSERT INTO  nhacungcap ( mancc,tenncc ,diachi, email, sdt,trangthai) values (@mancc, @tenncc, @diachi, @email, @sdt, @trangthai);");
@@ -39,8 +40,9 @@ namespace DAO
             paras[1] = new SqlParameter("@tenncc", txtSuamaNCC);
             paras[2] = new SqlParameter("@diachi", txtSuadiachiNCC);
             paras[3] = new SqlParameter("@email", txtSuaemailNCC);
-            paras[4] = new SqlParameter("@sdt", txtSuasdtNCC);
-            paras[5] = new SqlParameter("@trangthai", trangthai);
+            
+            paras[4] = new SqlParameter("@trangthai", trangthai);
+            paras[5] = new SqlParameter("@sdt", txtSuasdtNCC);
 
             return DataProvider.executeNonQuery(query, paras);
         }
